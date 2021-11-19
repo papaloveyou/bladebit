@@ -59,7 +59,7 @@ extern uint16_t L_targets[2][kBC][kExtraBitsPow];
 
 // EPP for the final file, the higher this is, the less variability, and lower delta
 // Note: if this is increased, ParkVector size must increase
-#define kEntriesPerPark      2048
+#define kEntriesPerPark      1024
 
 // To store deltas for EPP entries, the average delta must be less than this number of bits
 #define kMaxAverageDeltaTable1 5.6
