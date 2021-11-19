@@ -2,7 +2,7 @@
 #include "Util.h"
 
 // Hard-coded k to 32
-#define _K 32
+#define _K 31
 #define ENTRIES_PER_TABLE ( 1ull << _K )
 
 enum class TableId
