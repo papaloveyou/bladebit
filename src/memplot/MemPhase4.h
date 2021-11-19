@@ -107,7 +107,7 @@ inline size_t WriteP7Parallel( ThreadPool& pool, const uint64 length, const uint
      *          = 1056 64-bit fields
      */
     const size_t parkSize = CDiv( (_K + 1) * kEntriesPerPark, 8 );
-    static_assert( parkSize / 8 == 1056 );
+    static_assert( parkSize / 8 == 1024 );
     
     P7Job jobs[MAX_JOBS];
 
