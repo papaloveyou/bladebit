@@ -45,19 +45,19 @@ MemPlotter::MemPlotter( const MemPlotConfig& cfg )
         // YBuffers need to round up to chacha block size, so we just add an extra block always
         const size_t chachaBlockSize  = kF1BlockSizeBits / 8;
 
-        const size_t t1XBuffer   = 16ull GB;
-        const size_t t2LRBuffer  = 32ull GB;
-        const size_t t3LRBuffer  = 32ull GB;
-        const size_t t4LRBuffer  = 32ull GB;
-        const size_t t5LRBuffer  = 32ull GB;
-        const size_t t6LRBuffer  = 32ull GB;
-        const size_t t7LRBuffer  = 32ull GB;
-        const size_t t7YBuffer   = 16ull GB;
+        const size_t t1XBuffer   = 8ull GB;
+        const size_t t2LRBuffer  = 16ull GB;
+        const size_t t3LRBuffer  = 16ull GB;
+        const size_t t4LRBuffer  = 16ull GB;
+        const size_t t5LRBuffer  = 16ull GB;
+        const size_t t6LRBuffer  = 16ull GB;
+        const size_t t7LRBuffer  = 16ull GB;
+        const size_t t7YBuffer   = 8ull GB;
 
-        const size_t yBuffer0    = 32ull GB + chachaBlockSize;
-        const size_t yBuffer1    = 32ull GB + chachaBlockSize;
-        const size_t metaBuffer0 = 64ull GB;
-        const size_t metaBuffer1 = 64ull GB;
+        const size_t yBuffer0    = 16ull GB + chachaBlockSize;
+        const size_t yBuffer1    = 16ull GB + chachaBlockSize;
+        const size_t metaBuffer0 = 32ull GB;
+        const size_t metaBuffer1 = 32ull GB;
 
         const size_t reqMem = 
             t1XBuffer   +
