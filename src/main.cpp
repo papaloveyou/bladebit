@@ -379,7 +379,7 @@ void ParseCommandLine( int argc, const char* argv[], Config& cfg )
         else if( check( "--memory" ) )
         {
             // #TODO: Get this value from Memplotter
-            const size_t requiredMem  = 416ull GB;
+            const size_t requiredMem  = 208ull GB;
             const size_t availableMem = SysHost::GetAvailableSystemMemory();
             const size_t totalMem     = SysHost::GetTotalSystemMemory();
 
@@ -392,7 +392,7 @@ void ParseCommandLine( int argc, const char* argv[], Config& cfg )
         else if( check( "--memory-json" ) )
         {
             // #TODO: Get this value from Memplotter
-            const size_t requiredMem  = 416ull GB;
+            const size_t requiredMem  = 208ull GB;
             const size_t availableMem = SysHost::GetAvailableSystemMemory();
             const size_t totalMem     = SysHost::GetTotalSystemMemory();
 
