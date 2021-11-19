@@ -27,7 +27,7 @@ enum class TableId
 #define kBatchSizes 8
 
 // ChaCha8 block size
-#define kF1BlockSizeBits 512
+#define kF1BlockSizeBits 256
 
 // Extra bits of output from the f functions. Instead of being a function from k -> k bits,
 // it's a function from k -> k + kExtraBits bits. This allows less collisions in matches.
@@ -59,7 +59,7 @@ extern uint16_t L_targets[2][kBC][kExtraBitsPow];
 
 // EPP for the final file, the higher this is, the less variability, and lower delta
 // Note: if this is increased, ParkVector size must increase
-#define kEntriesPerPark      1024
+#define kEntriesPerPark      2048
 
 // To store deltas for EPP entries, the average delta must be less than this number of bits
 #define kMaxAverageDeltaTable1 5.6
